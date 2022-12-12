@@ -1,0 +1,15 @@
+C:\Users\shaki\Desktop\git\S Sharp\DZ2Lesson\bin\Debug\net6.0\DZ2Lesson.exe
+C:\Users\shaki\Desktop\git\S Sharp\DZ2Lesson\bin\Debug\net6.0\DZ2Lesson.deps.json
+C:\Users\shaki\Desktop\git\S Sharp\DZ2Lesson\bin\Debug\net6.0\DZ2Lesson.runtimeconfig.json
+C:\Users\shaki\Desktop\git\S Sharp\DZ2Lesson\bin\Debug\net6.0\DZ2Lesson.dll
+C:\Users\shaki\Desktop\git\S Sharp\DZ2Lesson\bin\Debug\net6.0\DZ2Lesson.pdb
+C:\Users\shaki\Desktop\git\S Sharp\DZ2Lesson\obj\Debug\net6.0\DZ2Lesson.csproj.AssemblyReference.cache
+C:\Users\shaki\Desktop\git\S Sharp\DZ2Lesson\obj\Debug\net6.0\DZ2Lesson.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shaki\Desktop\git\S Sharp\DZ2Lesson\obj\Debug\net6.0\DZ2Lesson.AssemblyInfoInputs.cache
+C:\Users\shaki\Desktop\git\S Sharp\DZ2Lesson\obj\Debug\net6.0\DZ2Lesson.AssemblyInfo.cs
+C:\Users\shaki\Desktop\git\S Sharp\DZ2Lesson\obj\Debug\net6.0\DZ2Lesson.csproj.CoreCompileInputs.cache
+C:\Users\shaki\Desktop\git\S Sharp\DZ2Lesson\obj\Debug\net6.0\DZ2Lesson.dll
+C:\Users\shaki\Desktop\git\S Sharp\DZ2Lesson\obj\Debug\net6.0\refint\DZ2Lesson.dll
+C:\Users\shaki\Desktop\git\S Sharp\DZ2Lesson\obj\Debug\net6.0\DZ2Lesson.pdb
+C:\Users\shaki\Desktop\git\S Sharp\DZ2Lesson\obj\Debug\net6.0\DZ2Lesson.genruntimeconfig.cache
+C:\Users\shaki\Desktop\git\S Sharp\DZ2Lesson\obj\Debug\net6.0\ref\DZ2Lesson.dll
