@@ -1,8 +1,10 @@
-﻿// Задача 10: Напишите программу, которая принимает на вход трёхзначное число 
-// и на выходе показывает вторую цифру этого числа.
+﻿// Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
-int x;
-Console.Write("Введи трёхзначное число: ");
-int.TryParse(Console.ReadLine()!, out x);
-
-Console.Write($"{x} -> {x / 10 %10}");
+int a; 
+Console.Write($"Введите число: ");
+int.TryParse(Console.ReadLine()!, out a);
+string num = a.ToString();
+if (num.Length < 3)
+    Console.Write($"третьей цифры нет");
+else 
+{Console.Write($"{a} -> {num[2]}");}
