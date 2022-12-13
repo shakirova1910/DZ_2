@@ -1,25 +1,20 @@
-﻿//Задача 21
-// Напишите программу, которая принимает на вход координаты двух точек
-// и находит расстояние между ними в 3D пространстве.
+﻿//Задача 25
+// Напишите цикл, который принимает на вход два числа (A и B) 
+//и возводит число A в натуральную степень B.
 
-int xa, xb, ya, yb, za, zb;
-Console.Write($"введите координты X т.А: ");
-int.TryParse(Console.ReadLine()!, out xa);
-Console.Write($"введите координты Y т.А: ");
-int.TryParse(Console.ReadLine()!, out ya);
-Console.Write($"введите координты Z т.А: ");
-int.TryParse(Console.ReadLine()!, out za);
-Console.Write($"введите координты X т.B: ");
-int.TryParse(Console.ReadLine()!, out xb);
-Console.Write($"введите координты Y т.B: ");
-int.TryParse(Console.ReadLine()!, out yb);
-Console.Write($"введите координты Z т.B: ");
-int.TryParse(Console.ReadLine()!, out zb);
-
-int x = (xa - xb) * (xa - xb);
-int y = (ya - yb) * (ya - yb);
-int z = (za - zb) * (za - zb);
-
-double ans = Math.Sqrt(x+y+z);
-
-Console.Write($"Расстояние между точками = {ans}  ");
+Console.Write("Введите число a: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число b: ");
+int b = Convert.ToInt32(Console.ReadLine());
+  
+  
+int Exponentiation(int a, int b){
+  int result = 1;
+  for(int i=1; i <= b; i++){
+    result = result * a;
+  }
+    // int result = Math.Pow(numberA, numberB);
+    return result;
+}
+  int exponentiation = Exponentiation(a, a);
+  Console.WriteLine( exponentiation);
