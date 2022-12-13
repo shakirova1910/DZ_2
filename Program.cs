@@ -1,20 +1,17 @@
 ﻿//Задача 25
-// Напишите цикл, который принимает на вход два числа (A и B) 
-//и возводит число A в натуральную степень B.
+// Напишите программу, которая принимает на вход число 
+//и выдаёт сумму цифр в числе.
 
+int a;
 Console.Write("Введите число a: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите число b: ");
-int b = Convert.ToInt32(Console.ReadLine());
-  
-  
-int Exponentiation(int a, int b){
-  int result = 1;
-  for(int i=1; i <= b; i++){
-    result = result * a;
-  }
-    // int result = Math.Pow(numberA, numberB);
-    return result;
-}
-  int exponentiation = Exponentiation(a, a);
-  Console.WriteLine( exponentiation);
+int.TryParse(Console.ReadLine(), out a);
+
+int b = a;
+int sum = 0;
+
+while (b > 0)
+{sum += b % 10;
+b/=10;
+ }
+Console.Write(sum);
+
