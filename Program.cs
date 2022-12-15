@@ -1,17 +1,18 @@
-﻿//Задача 25
-// Напишите программу, которая принимает на вход число 
-//и выдаёт сумму цифр в числе.
+﻿/* Задача 34: Задайте массив заполненный случайными 
+положительными трёхзначными числами. 
+Напишите программу, которая покажет 
+количество чётных чисел в массиве.*/
 
-int a;
-Console.Write("Введите число a: ");
-int.TryParse(Console.ReadLine(), out a);
+int[] array = new int [3];
+for (int i = 0;i < array.Length ; i++)
+    array[i] = new Random().Next(100,1000);
+int k = 0;
+for (int i = 0; i < array.Length; i++)
+    if (array[i] % 2 == 0)
+        k++;
+        
+for (int i = 0; i < array.Length; i++)
+    Console.Write($"{array[i]} ");
+Console.Write($"-> {k}");
 
-int b = a;
-int sum = 0;
-
-while (b > 0)
-{sum += b % 10;
-b/=10;
- }
-Console.Write(sum);
-
+ 
