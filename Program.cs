@@ -1,14 +1,16 @@
 ﻿/* Задача 36
- Задайте одномерный массив, заполненный 
-случайными числами. Найдите сумму элементов, 
-стоящих на нечётных позициях.*/
+ Задайте массив вещественных чисел. 
+ Найдите разницу между максимальным 
+ и минимальным элементов массива.*/
 
-int[] array = new int [7];
+double[] array = new double [7];
 for (int i = 0; i < array.Length ; i++)
-    array[i] = new Random().Next(10);
-int k = 0;
-for (int i = 1; i < array.Length; i += 2)
-        k+= array[i];
+    array[i] = new Random().Next(100) / 10.0;
+double max = array [0];
+double min = array [0];
+
+for (int i = 1; i < array.Length; i ++)
+    if (array[i] > max)
         
 for (int i = 0; i < array.Length; i++)
     Console.Write($"{array[i]} ");
