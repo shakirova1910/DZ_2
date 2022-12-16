@@ -1,19 +1,16 @@
-﻿/* Задача 36
- Задайте массив вещественных чисел. 
- Найдите разницу между максимальным 
- и минимальным элементов массива.*/
+﻿/* Задача 41: Пользователь вводит с клавиатуры M чисел. 
+Посчитайте, сколько чисел больше 0 ввёл пользователь. */
 
-double[] array = new double [7];
-for (int i = 0; i < array.Length ; i++)
-    array[i] = new Random().Next(100) / 10.0;
-double max = array [0];
-double min = array [0];
+string[] numbers = Console.ReadLine()!.Split(" ");
+int[] array  = new int [numbers.Length];
+for (int i = 0; i < numbers.Length; i++)
+   { int.TryParse(numbers [i], out array[i] );
+    Console.Write($"{array [i]} ");}
 
-for (int i = 1; i < array.Length; i ++)
-    if (array[i] > max)
-        
-for (int i = 0; i < array.Length; i++)
-    Console.Write($"{array[i]} ");
-Console.Write($"-> {k}");
+int a = 0; 
+foreach (var i in array)
+if (i>0)
+a++;
 
+Console.Write ($"{a}");
  
