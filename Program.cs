@@ -1,18 +1,22 @@
-﻿/* Задача 43: Напишите программу, 
-которая найдёт точку пересечения двух прямых,
- заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; 
-значения b1, k1, b2 и k2 задаются пользователем. */
+﻿/* Задача 47. Задайте двумерный массив размером m×n, 
+заполненный случайными вещественными числами. */
 
-Console.WriteLine("введите значение b1");
-double b1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("введите число k1");
-double k1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("введите значение b2");
-double b2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("введите число k2");
-double k2 = Convert.ToInt32(Console.ReadLine());
+int m, n;
+Console.WriteLine("введите значение m: ");
+int.TryParse(Console.ReadLine(), out m);
+Console.WriteLine("введите значение n: ");
+int.TryParse(Console.ReadLine(), out n);
 
-double x = (-b2 + b1)/(-k1 + k2);
-double y = k2 * x + b2;
+int[,] array = new int [m, n];
+ 
+for (int i = 0; i < array.GetLength(0); i++)
+{   
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+        array[i, j] = new Random() .Next(-9, 10);
+        Console.Write($"{array[i, j]} ");
+    } 
+    
+Console.WriteLine();
+    }
 
-Console.WriteLine($" X: {x}, Y: {y}");
