@@ -1,16 +1,15 @@
-﻿/* ЗЗадача 64: Задайте значение N. 
-Напишите программу, которая выведет все натуральные 
-числа в промежутке от N до 1. 
-Выполнить с помощью рекурсии.
+﻿/* Задача 66: Задайте значения M и N. 
+Напишите программу, которая найдёт сумму 
+натуральных элементов в промежутке от M до N.
  */
 
 Console.Write("Введи N: ");
 int N = Convert.ToInt16(Console.ReadLine());
-int M = 1;
+Console.Write("Введи M: ");
+int M = Convert.ToInt16(Console.ReadLine());
 Console.WriteLine($"N={N}, M={M}");
-if (M>N)
+int sum = 0;
+
 for (int i = N; i <= M; i++)
-    Console.Write($" {i}");
-else
-    for (int i = M; i <= N; i++)
-        Console.Write($" {i}");
+    sum += i;
+Console.WriteLine($"{sum}" );
