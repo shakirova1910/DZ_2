@@ -1,15 +1,24 @@
-﻿/* Задача 66: Задайте значения M и N. 
-Напишите программу, которая найдёт сумму 
-натуральных элементов в промежутке от M до N.
+﻿/* Задача 68: Напишите программу вычисления 
+функции Аккермана с помощью рекурсии. 
+Даны два неотрицательных числа m и n.
  */
 
 Console.Write("Введи N: ");
-int N = Convert.ToInt16(Console.ReadLine());
+int n = Convert.ToInt16(Console.ReadLine());
 Console.Write("Введи M: ");
-int M = Convert.ToInt16(Console.ReadLine());
-Console.WriteLine($"N={N}, M={M}");
-int sum = 0;
+int m = Convert.ToInt16(Console.ReadLine());
 
-for (int i = N; i <= M; i++)
-    sum += i;
-Console.WriteLine($"{sum}" );
+int AkkermanFunc(int m, int n)
+		{
+			if(m == 0)
+			{
+				return n + 1;
+			}
+			if(m > 0 && n == 0)
+			{
+				return AkkermanFunc(m - 1, 1);
+			}
+			return AkkermanFunc(m - 1, AkkermanFunc(m, n - 1));
+		}
+		
+		Console.WriteLine(AkkermanFunc(m, n));
