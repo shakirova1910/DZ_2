@@ -1,8 +1,10 @@
-﻿/* Задача 52. Задайте двумерный массив из целых чисел. 
-Найдите среднее арифметическое элементов в каждом столбце.
+﻿/* Задача 56: Задайте прямоугольный двумерный массив.
+Напишите программу, которая будет находить строку 
+с наименьшей суммой элементов.
+
  */
 
-int [,] array = new int [3,4];
+int [,] array = new int [4,4];
 
 for (int i = 0; i<array.GetLength(0); i++)
 {
@@ -15,23 +17,19 @@ for (int i = 0; i<array.GetLength(0); i++)
 }
 
 
-
-
-
-;
-for (int j = 0; j<array.GetLength(0); j++)
+int imin = 0; 
+int min = 0; 
+for (int i = 0; i < array.GetLength(1); i++)
+    min += array[0, i];
+for (int i = 1; i < array.GetLength(1); i++)
 {
-        int sum = 0;
-        for (int i = 0; i<array.GetLength(0); i++)
-            sum += array [i, j];
-    Console.Write($"{Math.Round((double)sum/array.GetLength(0), 1)} ");
-}
-
-
-
-/*for (int i = 0; i<array.GetLength(0); i++)
-{
-    for (int j = 0; j<array.GetLength(1); j++)
-        Console.Write($"{array[i,j]} ");
-    Console.WriteLine();
-}*/
+    int sum = 0; 
+    for (int j = 0 j < array.GetLength(1); j++)
+        sum += array[1. j];
+    if (sum<min)
+    {
+        min = sum;
+        imin = i;
+    }
+    }
+Console.Write($"{imin}");
