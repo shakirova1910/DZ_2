@@ -1,35 +1,16 @@
-﻿/* Задача 56: Задайте прямоугольный двумерный массив.
-Напишите программу, которая будет находить строку 
-с наименьшей суммой элементов.
-
+﻿/* ЗЗадача 64: Задайте значение N. 
+Напишите программу, которая выведет все натуральные 
+числа в промежутке от N до 1. 
+Выполнить с помощью рекурсии.
  */
 
-int [,] array = new int [4,4];
-
-for (int i = 0; i<array.GetLength(0); i++)
-{
-    for (int j = 0; j<array.GetLength(1); j++)
-    {
-        array[i,j] = new Random().Next(10);
-        Console.Write($"{array[i,j]} ");
-    }
-    Console.WriteLine();
-}
-
-
-int imin = 0; 
-int min = 0; 
-for (int i = 0; i < array.GetLength(1); i++)
-    min += array[0, i];
-for (int i = 1; i < array.GetLength(1); i++)
-{
-    int sum = 0; 
-    for (int j = 0 j < array.GetLength(1); j++)
-        sum += array[1. j];
-    if (sum<min)
-    {
-        min = sum;
-        imin = i;
-    }
-    }
-Console.Write($"{imin}");
+Console.Write("Введи N: ");
+int N = Convert.ToInt16(Console.ReadLine());
+int M = 1;
+Console.WriteLine($"N={N}, M={M}");
+if (M>N)
+for (int i = N; i <= M; i++)
+    Console.Write($" {i}");
+else
+    for (int i = M; i <= N; i++)
+        Console.Write($" {i}");
